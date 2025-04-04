@@ -1,0 +1,95 @@
+.side-bar{
+    position:fixed;
+    left:0;
+    bottom:0;
+    top:56px;
+    width:220px;
+    z-index:200;
+    display:flex;
+    flex-direction: column; 
+    cursor:pointer;
+
+}
+.scrollbox{
+    overflow:auto;
+    padding-right:10px;
+    visibility: hidden;
+
+}
+.scrollbox::-webkit-scrollbar {
+    width:5px;
+}
+.scrollbox::-webkit-scrollbar-thumb{
+    background: #e7e3e3;
+    border-radius: 10px;
+}
+.sidebar-link, .scrollbox:hover{
+    visibility: visible;
+}
+
+
+
+.sidebar-link{
+    height:40px;
+    display:flex;
+    justify-content: start;
+    align-items:Center;
+    cursor:pointer;
+    position: relative;
+
+}
+.sidebar-link:hover{
+    border-radius:10px;
+    background-color: rgb(234, 228, 228);
+}
+.sidebar-link .you-bar{
+    font-size:16px;
+    font-family:Roboto, Arial;
+    height:40px;
+    font-weight:bold;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;;
+    
+}
+.sidebar-link img{
+    height:20px;
+    display:flex;
+    align-items: left;
+margin-left: 15px;
+margin-right:17px;
+
+}
+.sidebar-link div{
+    font-family:Roboto, Arial;
+    font-size:14px;
+    cursor:pointer;
+}
+.border-line{
+    border-width:0.01px;
+    width:220px;
+    margin-left:5px;
+    margin-right:5px;
+    border-style: solid;
+    border-color:rgb(239, 237, 237);
+    display:visible;
+}
+.sidebar-link .sidebar-tooltip{
+    position:absolute;
+    border:1px solid rgb(148, 148, 148);
+    font-size:12px;
+    top:28px;
+    right:20px;
+    font-family:Roboto,arial;
+    opacity:0;
+    border-radius: 1px;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    padding:5px;
+    color:rgb(28, 23, 23);
+}
+.sidebar-link:hover .sidebar-tooltip{
+    opacity:1;
+}

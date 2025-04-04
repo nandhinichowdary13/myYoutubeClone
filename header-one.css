@@ -1,0 +1,59 @@
+.header-one{
+    height:50px;
+    cursor:pointer;
+    position:fixed;
+    top:59px;
+    right:20px;
+    left:250px;
+    background-color:white;
+    z-index: 10;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+
+
+
+}
+.all-element{
+    color: white;
+    padding:7px 10px;
+    border-radius:7px;
+    font-family: Roboto,Arial;
+    font-size: 14px;
+    background-color: rgb(242, 242, 242);
+    color:rgb(0, 0, 0);
+    border:none;  
+    margin:8px;
+    position:fixed;
+    position: relative;
+
+}
+
+.elements{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-element .element-tooltip{
+    position:absolute;
+    border:1px solid rgb(148, 148, 148);
+    font-size:12px;
+    top:33px;
+    right:-19px;
+    font-family:Roboto,arial;
+    opacity:0;
+    border-radius: 1px;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    padding:5px;
+    color:rgb(28, 23, 23);
+}
+.all-element:hover .element-tooltip{
+    opacity:1;
+}
+.all-element:hover{
+    background-color: rgb(219, 216, 216);
+}

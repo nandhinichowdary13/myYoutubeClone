@@ -1,0 +1,123 @@
+.video-preview{
+    cursor:pointer;
+}
+
+.horizontal-layout{
+    height:130px;
+    width:400px;
+    margin-top:0;
+    cursor:pointer;
+}
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 47px 1fr 25px;
+} 
+.channel-picture{
+    
+    margin-left:8px;
+    margin-bottom:10px ; 
+
+}
+.video-info{
+
+    padding-left:15px;
+
+}
+.profile-picture{
+    height:40px;
+    width:40px;
+    margin-top:0px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    vertical-align:top;
+    margin-left:0px;
+    margin-right:15px;
+    object-fit:cover;
+    border-radius: 20px;
+     
+}
+.thumbnail-row{
+    margin-bottom:12px;
+    position:relative;
+}
+.thumbnail{
+    width:100%;
+    border-radius:12px;
+}
+.video-title {
+    font-size:16px;
+    font-family:Roboto,Arial,sans-serif;
+    font-weight:550;
+    color:black;
+    margin-bottom:0;
+    margin-top:2px;
+    vertical-align: top;
+}
+.channel-name{
+    font-size:15px;
+    margin-top:12px;
+    margin-bottom: 0px;
+    color:#606060;
+}
+.video-posted{
+    font-size:15px;
+    margin-top:3px;
+    color:#606060;
+}
+
+.three-dots{
+    margin-top:0px;
+ 
+
+    object-fit:cover;
+    height:20px;
+    margin-left:13px;
+    width:10px;
+    margin-right:0px;
+}
+.verified-button{
+    background-color: #606060;
+    color:white;
+    width:10px;
+    padding:1.2px ;
+    height:10px;
+    font-size:10px;
+    border-radius:100%;
+    margin-bottom:0;
+}
+.video-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap:17px;
+    row-gap:40px;
+
+}
+@media(max-width:800px){
+    .video-grid{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:1150px) and (min-width:801px){
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width:1200px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.video-time{
+    background-color: black;
+    color:white;
+    position:absolute;
+    right:9px;
+    bottom:9px;
+    font-family:Roboto, Arial;
+    font-size:12px;
+    padding:3px;
+    border-radius:3px;
+
+
+}
